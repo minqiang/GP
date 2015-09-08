@@ -5,7 +5,7 @@ downloadData <- function(ticker) {
   today_month <- as.character( as.numeric(format(today, "%m"))-1 )
   today_year <- format(today, "%Y")
   
-  start <- today - 31;
+  start <- today - 365*10;
   start_day <- format(start, "%d")
   start_month <- as.character( as.numeric(format(start, "%m"))-1 )
   start_year <- format(start, "%Y")
